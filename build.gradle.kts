@@ -14,12 +14,12 @@ repositories {
 
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
     implementation("org.junit.jupiter:junit-jupiter:5.9.0")
     implementation("org.junit.jupiter:junit-jupiter-engine:5.9.0")
     implementation("org.junit.jupiter:junit-jupiter-api:5.9.0")
     // https://mvnrepository.com/artifact/com.paymentwall/paymentwall-java
     implementation("com.paymentwall:paymentwall-java:2.0.4")
-    implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
 
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }

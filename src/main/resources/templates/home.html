@@ -3,10 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
+<!--메인페이지-->
 
-<h1>home.html 파일 입니다.</h1>
-
+<!--
+1. 페이지에 접근하면 checkMembershipMember()가 실행돼서
+사용자가 로그인하지 않은 사용자 | 결제한 사용자 | 결제하지 않은 사용자인지
+구별한다.
+2. 로그인하지 않은 사용자는 로그인 요청 모달이 보이고
+goToLogin()을 하면 로그인페이지로 이동한다.
+3. 로그인했으나 결제한 사용자는 페이지를 이용할 수 있고,
+4. 로그인했으나 결제하지 않은 사용자는 멤버십 페이지로 이동한다.
+-->
+<h1>home.html 메인페이지로 가정합니다.</h1>
+<div id="login_toast_modal" class="login-toast-modal">
+    <p>로그인부터 해주세요.</p>
+    <button id="btn_okay" class="btn-okay" onclick="goToLogin()">확인</button>
+</div>
+<script type="text/javascript" src="/js/common.js"></script>
+<script>
+    checkMembershipMember();
+</script>
 </body>
 </html>
